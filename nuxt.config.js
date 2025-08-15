@@ -33,6 +33,12 @@ export default {
       { rel: 'stylesheet', href: '/css/style.css' }
       
       
+    ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/f895e990f6.js',
+        crossorigin: 'anonymous'
+      }
     ]
   },
   /*
@@ -60,6 +66,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios'
   ],
   /*
   ** Build configuration
@@ -75,5 +82,20 @@ export default {
   server: {
     port: 4000,
     host: 'localhost'
+  },
+
+   axios: {
+    proxy: true
+  },
+  proxy: {
+    '/auth/': {
+      target: 'http://localhost:8080',
+      changeOrigin: true
+    },
+
+    '/api-login': {
+      target: 'http://localhost:8080',
+      changeOrigin: true
+    }
   }
 }

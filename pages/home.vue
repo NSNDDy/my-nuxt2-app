@@ -1,7 +1,7 @@
 <template>
  <div>
     <Header />
-    <h1 style="text-align: center;">HELLO this home</h1>
+    <Body />
     <!-- <Footer /> -->
   </div>
 </template>
@@ -9,6 +9,7 @@
 <script>
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
+import Body from '~/components/Body.vue'
 
 export default {
   name: 'HomePage',
@@ -21,7 +22,8 @@ export default {
 
   components: {
     Header,
-    Footer
+    Footer,
+    Body
   }
 };
 </script>

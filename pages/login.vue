@@ -109,16 +109,6 @@
 <script>
 export default {
   name: 'LoginPage',
-  head() {
-    return {
-      script: [
-        { 
-          src: 'https://kit.fontawesome.com/f895e990f6.js', 
-          crossorigin: 'anonymous' 
-        }
-      ]
-    }
-  },
   data() {
     return {
       form: {
@@ -137,16 +127,22 @@ export default {
   methods: {
     async handleLogin() {
       this.loading = true;
-      try {
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        console.log('Login attempt:', this.form);
-        // Add your login logic here
-      } catch (error) {
-        console.error('Login error:', error);
-      } finally {
-        this.loading = false;
-      }
+      
+      const res = this.$axios.$post("/api-login", {
+        username : this.form.username,
+        password : this.form.password
+      }).then(response => {
+        const token = response.header['accessToken'];
+
+        if(token){
+          localStorage.setItem('accessToken', token);
+          console.log('Access Token đã lưu : ' , token)
+        }
+      })
+
+      console.log("Login thành công ! " , res )
+
+      this.$router.push("/home")
     },
     togglePassword() {
       this.showPassword = !this.showPassword;
@@ -174,7 +170,7 @@ export default {
       alert('OTP sent to ' + this.phoneForm.number);
     },
     goToSignup() {
-      alert('Redirect to signup page');
+      this.$router.push('/register');
     }
   }
 }

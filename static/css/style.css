@@ -837,7 +837,7 @@ section,
 .stats .stats-item i {
   font-size: 44px;
   color: var(--accent-color);
-  line-height: 0;
+  /* line-height: 0; */
   margin-right: 15px;
 }
 

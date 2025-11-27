@@ -1,7 +1,7 @@
 <template>
  <div>
     <Header />
-    <Body />
+    
     <!-- <Footer /> -->
   </div>
 </template>
@@ -15,7 +15,11 @@ export default {
   name: 'HomePage',
  
 
-  data() {},
+  data() {
+    return{
+      message:'hello'
+    }
+  },
   mounted() {
     console.log(this.message);
   },

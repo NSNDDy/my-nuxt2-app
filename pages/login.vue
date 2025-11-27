@@ -142,7 +142,7 @@ export default {
 
       console.log("Login thành công ! " , res )
 
-      this.$router.push("/home")
+      this.$router.push("/dashboard");
     },
     togglePassword() {
       this.showPassword = !this.showPassword;

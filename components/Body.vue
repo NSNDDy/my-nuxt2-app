@@ -56,67 +56,61 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="about section">
+    <section id="about" class="about section">
 
-            <div class="container section-title">
-                <h2>About Us</h2>
-                <p>We help you get better and you feel great about it</p>
-            </div><!-- End section title  -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
 
-            <!--  -->
-            <div class="container">
+      <div class="container">
 
-                <div class="row gy-5">
+        <div class="row gy-5">
 
-                    <div class="content col-xl-5 d-flex flex-column">
-                        <h3>We bring the most worthy joy</h3>
-                        <p>
-                            We are not born to vanish like a nameless grain of sand.
-                            We are born to leave our footprints on the earth and in the hearts of others.
-                        </p>
-                        <a href="#" class="about-btn align-self-center align-self-xl-start"><span>About Us</span> <i
-                                class="fa-solid fa-chevron-right"></i></a>
-                    </div>
+          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p>
+            <a href="#" class="about-btn align-self-center align-self-xl-start"><span>About us</span> <i class="bi bi-chevron-right"></i></a>
+          </div>
 
-                    <div class="col-xl-7">
-                        <div class="row gy-4">
-                            <!-- Icon Box -->
-                            <div class="col-md-6 icon-box position-relative">
-                                <i class="fa-solid fa-briefcase"></i>
-                                <h4><a href="" class="stretched-link">Make Fun</a></h4>
-                                <p>
-                                    Nobody can controll you.
-                                    Your destiny is up to you
-                                </p>
-                            </div>
+          <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
 
-                            <!-- Icon box -->
-                            <div class="col-md-6 icon-box position-relative">
-                                <i class="fa-regular fa-gem"></i>
-                                <h4><a href="">Make Happy</a></h4>
-                                <p>You can do evething in the wolrd, be confident</p>
-                            </div>
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-briefcase"></i>
+                <h4><a href="" class="stretched-link">Corporis voluptates sit</a></h4>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div><!-- Icon-Box -->
 
-                            <!-- Icon box -->
-                            <div class="col-md-6 icon-box position-reletive">
-                                <i class="fa-solid fa-tower-broadcast"></i>
-                                <h4><a href="">Make Strong</a></h4>
-                                <p>no one can beat you</p>
-                            </div>
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-gem"></i>
+                <h4><a href="" class="stretched-link">Ullamco laboris nisi</a></h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div><!-- Icon-Box -->
 
-                            <!-- Icon Box -->
-                            <div class="col-md-6 icon-box position-reletive">
-                                <i class="fa-solid fa-tv"></i>
-                                <h4><a href="">Make Nice</a></h4>
-                                <p>
-                                    You can help everybody nice in life
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-broadcast"></i>
+                <h4><a href="" class="stretched-link">Labore consequatur</a></h4>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-easel"></i>
+                <h4><a href="" class="stretched-link">Beatae veritatis</a></h4>
+                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+              </div><!-- Icon-Box -->
+
             </div>
-        </section>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
 
 
         <!-- Status Section -->
@@ -443,7 +437,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                    <img src="images/testimonials/testimonials-1.jpg" class="testimonial-img"
                                         alt="">
                                     <h3>Saul Goodman</h3>
                                     <h4>Ceo &amp; Founder</h4>
@@ -466,7 +460,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
+                                    <img src="images/testimonials/testimonials-2.jpg" class="testimonial-img"
                                         alt="">
                                     <h3>Sara Wilsson</h3>
                                     <h4>Designer</h4>
@@ -489,7 +483,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
+                                    <img src="images/testimonials/testimonials-3.jpg" class="testimonial-img"
                                         alt="">
                                     <h3>Jena Karlis</h3>
                                     <h4>Store Owner</h4>
@@ -512,7 +506,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
+                                    <img src="images/testimonials/testimonials-4.jpg" class="testimonial-img"
                                         alt="">
                                     <h3>Matt Brandon</h3>
                                     <h4>Freelancer</h4>
@@ -535,7 +529,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
+                                    <img src="images/testimonials/testimonials-5.jpg" class="testimonial-img"
                                         alt="">
                                     <h3>John Larson</h3>
                                     <h4>Entrepreneur</h4>
@@ -569,6 +563,7 @@
 </template>
 
 <script>
+
 export default {
 }
 </script>

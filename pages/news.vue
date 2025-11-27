@@ -78,6 +78,11 @@
         </div>
       </div>
     </div>
+
+    <div style="margin-left: 50px;" >
+      <b-button @click="hand" pill variant="primary">Button</b-button>
+    </div>
+
   </div>
 </template>
 
@@ -125,6 +130,7 @@ export default {
           this.posts = data
         } else {
           this.posts = [...this.posts, ...data]
+          console.log('Posts :', this.posts)
         }
         
       } catch (error) {
@@ -165,6 +171,10 @@ export default {
     truncateText(text, maxLength) {
       if (text.length <= maxLength) return text
       return text.substring(0, maxLength) + '...'
+    },
+
+    hand(){
+      this.$router.push('/dashboard')
     }
   }
 }

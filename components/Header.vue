@@ -4,7 +4,7 @@
 
       <nuxt-link to="/" class="logo d-flex align-items-center me-auto">
         <!-- <img src="/logo.png" alt=""> -->
-        <h1 class="sitename">Syn</h1>
+        <h1 class="sitename">Neyyud</h1>
       </nuxt-link>
 
       <nav id="navmenu" class="navmenu">

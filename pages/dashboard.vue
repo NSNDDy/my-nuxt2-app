@@ -24,6 +24,13 @@
                             <li>Visits: 0</li>
                         </ul>
                     </div>
+                    <div class="card chat-card">
+                        <h3>💬 Chat Realtime</h3>
+                        <p>Tham gia vào phòng chat để giao tiếp với mọi người</p>
+                        <button @click="goToChat" class="btn-chat">
+                            Vào Chat
+                        </button>
+                    </div>
                 </section>
             </main>
         </div>
@@ -40,6 +47,9 @@ export default {
     methods:{
         hand(){
             this.$router.push('/news')
+        },
+        goToChat() {
+            this.$router.push('/chat')
         }
     }
 }
@@ -94,5 +104,40 @@ export default {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     max-width: 400px;
+    margin-bottom: 1.5rem;
+}
+
+.chat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chat-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.btn-chat {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-chat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-chat:active {
+    transform: translateY(0);
 }
 </style>
